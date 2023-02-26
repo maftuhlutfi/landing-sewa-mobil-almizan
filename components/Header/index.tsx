@@ -38,7 +38,7 @@ const Header = ({}: HeaderProps) => {
         <nav
           className={`fixed inset-0 ${
             isMenuOpen ? "" : "translate-x-full lg:translate-x-0"
-          } flex transform flex-col items-center gap-12 bg-white pt-32 transition-all duration-200 lg:static lg:flex-row lg:pt-0`}
+          } flex transform flex-col items-center gap-8 text-sm bg-white pt-32 transition-all duration-200 lg:static lg:flex-row lg:pt-0`}
         >
           {links.map((link) => (
             <a key={link.name} href={link.href} className="hover:text-blue-800">
