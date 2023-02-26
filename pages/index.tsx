@@ -58,6 +58,10 @@ export default function Home({ dataMobil }: { dataMobil: armadaType[] }) {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="google-site-verification"
+          content="GBNwlP70kNIt7tlR_hJgt7NbZJUuxbCQtf4aYnofXZo"
+        />
       </Head>
       <MainLayout>
         <section
