@@ -11,6 +11,11 @@ const ArmadaItem = ({
   image,
   includeBbm,
 }: armadaType) => {
+  const handleClick = () => {
+    document.getElementById("pesan")?.scrollIntoView();
+    (document.querySelector("select#mobil") as HTMLInputElement).value = name;
+  };
+
   return (
     <div className="flex flex-col p-5 bg-white ">
       <h4 className="mb-2 text-2xl font-semibold">{name}</h4>
@@ -40,7 +45,12 @@ const ArmadaItem = ({
             )}
           </p>
         </div>
-        <Button size="small" variant="secondary" className="text-xs ">
+        <Button
+          size="small"
+          variant="secondary"
+          className="text-xs"
+          onClick={handleClick}
+        >
           Pesan <br />
           Sekarang
         </Button>
