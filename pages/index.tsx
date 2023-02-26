@@ -63,7 +63,7 @@ export default function Home() {
           className="bg-center bg-no-repeat bg-cover px-4 md:px-10 lg:px-20 pt-[200px] pb-32 lg:pb-[160px] text-center flex flex-col items-center"
           style={{ backgroundImage: `url(/bg-pattern.svg)` }}
         >
-          <h1 className="font-bold text-[40px] leading-[56px] max-w-[1000px]">
+          <h1 className="font-bold text-4xl md:text-[40px] leading-[56px] max-w-[1000px]">
             Jadikan Perjalananmu Lebih Nyaman dengan{" "}
             <span className="font-extrabold text-blue-600">#1</span> Sewa Mobil
             Magelang Jogja Terpercaya
@@ -85,16 +85,13 @@ export default function Home() {
             alt="hero-image"
           />
         </div>
-        <div className="overflow-x-hidden max-w-screen">
-          <div className="absolute w-[720px] -translate-x-1/2 inset-x-1/2 md:static md:block lg:hidden">
-            <Image
-              src="/hero-image-small.webp"
-              width={1024}
-              height={228}
-              className="absolute -mt-32 transform -translate-x-1/2 inset-x-1/2"
-              alt="hero-image"
-            />
-          </div>
+        <div className="relative -mt-32 w-[720px] max-w-full sm:w-full h-40 sm:h-80 -translate-x-1/2 inset-x-1/2 block lg:hidden">
+          <Image
+            src="/hero-image-small.webp"
+            fill
+            alt="hero-image"
+            className="object-cover "
+          />
         </div>
         <section className="flex justify-center px-4 pt-40 pb-20 lg:px-20 md:px-10 bg-linear-blue-dark lg:pt-60">
           <div className="flex flex-col items-center lg:flex-row">
