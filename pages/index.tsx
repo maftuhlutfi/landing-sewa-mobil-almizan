@@ -85,14 +85,16 @@ export default function Home() {
             alt="hero-image"
           />
         </div>
-        <div className="absolute w-[720px] -translate-x-1/2 inset-x-1/2 md:static md:block lg:hidden">
-          <Image
-            src="/hero-image-small.webp"
-            width={1024}
-            height={228}
-            className="absolute -mt-32 transform -translate-x-1/2 inset-x-1/2"
-            alt="hero-image"
-          />
+        <div className="overflow-x-hidden max-w-screen">
+          <div className="absolute w-[720px] -translate-x-1/2 inset-x-1/2 md:static md:block lg:hidden">
+            <Image
+              src="/hero-image-small.webp"
+              width={1024}
+              height={228}
+              className="absolute -mt-32 transform -translate-x-1/2 inset-x-1/2"
+              alt="hero-image"
+            />
+          </div>
         </div>
         <section className="flex justify-center px-4 pt-40 pb-20 lg:px-20 md:px-10 bg-linear-blue-dark lg:pt-60">
           <div className="flex flex-col items-center lg:flex-row">
