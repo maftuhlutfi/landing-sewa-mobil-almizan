@@ -1,5 +1,6 @@
 import Armada from "@/components/Armada";
 import Button from "@/components/Button";
+import FloatingComp from "@/components/FloatingComp";
 import OrderForm from "@/components/OrderForm";
 import OrderSteps from "@/components/OrderSteps";
 import ServiceItems from "@/components/ServiceItems";
@@ -178,6 +179,7 @@ export default function Home({ dataMobil }: { dataMobil: armadaType[] }) {
             Tim Sewa Mobil Magelang Jogja Al Mizan
           </h5>
         </section>
+        <FloatingComp />
       </MainLayout>
     </>
   );
