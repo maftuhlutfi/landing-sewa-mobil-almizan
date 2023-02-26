@@ -150,12 +150,16 @@ export default function Home({ dataMobil }: { dataMobil: armadaType[] }) {
               <p className="font-semibold">
                 Jika form ini tidak cocok untuk kebutuhanmu, langsung saja
                 hubungi melalui{" "}
-                <a href="#" className="font-bold text-green-500 underline">
+                <a
+                  href="https://wa.me/+6281315716345"
+                  className="font-bold text-green-500 underline"
+                  target="_blank"
+                >
                   Whatsapp Kami
                 </a>
               </p>
             </div>
-            <OrderForm />
+            <OrderForm listMobil={dataMobil} />
           </div>
         </section>
         <section
