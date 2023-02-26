@@ -45,7 +45,12 @@ const Footer = (props: Props) => {
         <h2 className="mb-5 text-2xl font-bold text-center text-white lg:text-left">
           Lokasi Kami
         </h2>
-        <div className="w-[320px] h-[140px] bg-blue-100"></div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.067866913764!2d110.3403124!3d-7.346276199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a7f97b8152aad%3A0xffd05e851f49fd13!2sSewa%20Mobil%20Al%20Mizan%20-%20Sewa%20Mobil%20Magelang%20Jogja!5e0!3m2!1sen!2sid!4v1677427779863!5m2!1sen!2sid"
+          width="300"
+          height="150"
+          loading="lazy"
+        ></iframe>
       </div>
     </footer>
   );
