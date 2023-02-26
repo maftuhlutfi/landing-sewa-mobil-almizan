@@ -1,7 +1,8 @@
 export type armadaType = {
   name: string;
-  capacity: string;
-  pricehalf: string;
-  priceday: string;
+  capacity: number;
+  priceHalf: number;
+  priceDay: number;
   image: string;
+  includeBbm: number;
 };

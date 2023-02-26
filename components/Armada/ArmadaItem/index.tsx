@@ -6,9 +6,10 @@ import React from "react";
 const ArmadaItem = ({
   name,
   capacity,
-  priceday,
-  pricehalf,
+  priceDay,
+  priceHalf,
   image,
+  includeBbm,
 }: armadaType) => {
   return (
     <div className="flex flex-col p-5 bg-white ">
@@ -21,10 +22,22 @@ const ArmadaItem = ({
         <div className="text-sm">
           <p className="text-gray-700 mb-1.5 font-semibold">Tarif Mulai</p>
           <p className="text-blue-600 mb-1.5 font-semibold">
-            Rp. {pricehalf} (12 jam)
+            Rp. {priceHalf} (12 jam)
           </p>
           <p className="text-blue-600 mb-1.5 font-semibold">
-            Rp. {priceday} (24 jam)
+            Rp. {priceDay} (24 jam)
+          </p>
+          <p className="text-gray-600 mb-1.5 text-xs italic mt-2">
+            {includeBbm ? (
+              <>
+                <span className="text-red-600">*</span> Sudah termasuk BBM
+              </>
+            ) : (
+              <>
+                <span className="text-red-600">*</span> Belum termasuk BBM (+Rp.
+                100.000)
+              </>
+            )}
           </p>
         </div>
         <Button size="small" variant="secondary" className="text-xs ">
@@ -37,7 +50,7 @@ const ArmadaItem = ({
         width={360}
         height={250}
         alt={`image-${name}`}
-        className="object-contain"
+        className="object-contain object-center"
       />
     </div>
   );

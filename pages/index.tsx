@@ -4,10 +4,11 @@ import OrderForm from "@/components/OrderForm";
 import OrderSteps from "@/components/OrderSteps";
 import ServiceItems from "@/components/ServiceItems";
 import MainLayout from "@/layout/MainLayout";
+import { armadaType } from "@/ts/types/armadaType";
 import Head from "next/head";
 import Image from "next/image";
 
-export default function Home() {
+export default function Home({ dataMobil }: { dataMobil: armadaType[] }) {
   return (
     <>
       <Head>
@@ -131,7 +132,7 @@ export default function Home() {
             Kami menyediakan armada mobil yang terawat dan beragam jenis untuk
             mengantar perjalananmu dengan aman dan nyaman di Magelang dan Jogja.
           </p>
-          <Armada />
+          <Armada armadaList={dataMobil} />
         </section>
         <section className="flex flex-col items-center px-4 py-20 md:px-10 lg:px-20">
           <div className="flex flex-col items-center lg:flex-row">
@@ -163,4 +164,19 @@ export default function Home() {
       </MainLayout>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const res = await fetch(
+    "https://api.sheety.co/f27cc94bba1d6eea26802f8d6c63eaeb/alMizan/dataMobil"
+  );
+  const data = await res.json();
+  const { dataMobil }: { dataMobil: armadaType[] } = data;
+  console.log(dataMobil);
+
+  return {
+    props: {
+      dataMobil: dataMobil,
+    },
+  };
 }
