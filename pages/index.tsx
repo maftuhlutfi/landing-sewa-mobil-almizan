@@ -1,9 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import Armada from "@/components/Armada";
+import Button from "@/components/Button";
+import OrderForm from "@/components/OrderForm";
+import OrderSteps from "@/components/OrderSteps";
+import ServiceItems from "@/components/ServiceItems";
+import MainLayout from "@/layout/MainLayout";
+import Head from "next/head";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -14,110 +16,99 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.tsx</code>
+      <MainLayout>
+        <section
+          className="bg-center bg-no-repeat bg-cover px-20 pt-[200px] pb-[160px] text-center flex flex-col items-center"
+          style={{ backgroundImage: `url(/bg-pattern.svg)` }}
+        >
+          <h1 className="font-bold text-[40px] leading-[56px] max-w-[1000px]">
+            Jadikan Perjalananmu Lebih Nyaman dengan{" "}
+            <span className="font-extrabold text-blue-600">#1</span> Sewa Mobil
+            Magelang Jogja Terpercaya
+          </h1>
+          <p className="max-w-3xl my-5 leading-6 text-gray-700">
+            Rasakan kenyamanan dan keamanan dalam perjalananmu dengan menyewa
+            mobil terpercaya di Magelang dan Jogja. Tersedia berbagai jenis
+            mobil dengan harga terjangkau. Pesan sekarang dan nikmati pengalaman
+            berkendara yang tak terlupakan!
           </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
-        </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
+          <Button className="px-8 mt-2 mb-12">Yuk Pesan!</Button>
+        </section>
+        <Image
+          src="/hero-image.webp"
+          width={1280}
+          height={340}
+          className="absolute transform -translate-x-1/2 -mt-36 inset-x-1/2"
+          alt="hero-image"
+        />
+        <section className="flex justify-center px-20 pb-20 bg-linear-blue-dark pt-60">
+          <div className="flex items-center">
+            <div className="mr-20 max-w-[480px]">
+              <h1 className="mb-5 text-4xl font-bold leading-[50px] text-white">
+                Kunjungi Tiap Sudut Magelang dan Jogja dengan Menyenangkan!
+              </h1>
+              <p className="text-sm leading-6 text-gray-300">
+                Kami menyediakan armada mobil yang terawat dan selalu siap untuk
+                menjemputmu di Magelang dan Jogja. Kami memiliki berbagai jenis
+                mobil, mulai dari city car hingga mobil keluarga, yang siap
+                mengantar perjalananmu dengan aman dan nyaman.
+              </p>
+            </div>
             <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
+              src="/yogya-mgl-photos.webp"
+              width={538}
+              height={449}
+              alt="yogya-mgl-photos"
             />
           </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+        </section>
+        <section className="flex flex-col items-center px-20 py-20 bg-blue-600">
+          <h1 className="text-4xl font-bold leading-[50px] text-white max-w-xl mb-12 text-center">
+            Kami Siap Melayani untuk Perjalanan yang Terbaik!
+          </h1>
+          <ServiceItems />
+          <Button className="mt-12" size="xl" variant="secondary">
+            Pesan Sekarang dan Nikmati Perjalanan Nyaman!
+          </Button>
+        </section>
+        <section className="flex flex-col items-center px-20 py-20 bg-[#F3F7F9]">
+          <h1 className="text-4xl font-bold leading-[50px] mb-2 text-center">
+            Armada Kami
+          </h1>
+          <p className="mb-10 text-sm leading-6 text-gray-700 max-w-[620px] text-center">
+            Kami menyediakan armada mobil yang terawat dan beragam jenis untuk
+            mengantar perjalananmu dengan aman dan nyaman di Magelang dan Jogja.
+          </p>
+          <Armada />
+        </section>
+        <section className="flex flex-col items-center px-20 py-20">
+          <div className="flex items-center">
+            <div className="max-w-[520px] mr-24">
+              <h1 className="text-4xl font-bold leading-[50px] mb-9">
+                Yuk, pesan mobil dengan beberapa langkah mudah!
+              </h1>
+              <OrderSteps />
+              <p className="font-semibold">
+                Jika form ini tidak cocok untuk kebutuhanmu, langsung saja
+                hubungi melalui{" "}
+                <a href="#" className="font-bold text-green-500 underline">
+                  Whatsapp Kami
+                </a>
+              </p>
+            </div>
+            <OrderForm />
+          </div>
+        </section>
+        <section className="flex flex-col items-center px-20 py-20 bg-blue-600">
+          <h1 className="text-4xl font-bold leading-[50px] text-white max-w-[960px] mb-8 text-center">
+            “Kami hadir untuk memberikan solusi terbaik dalam perjalananmu,
+            karena kepuasan pelanggan adalah prioritas utama kami.”
+          </h1>
+          <h5 className="text-xl font-medium text-gray-300">
+            Tim Sewa Mobil Magelang Jogja Al Mizan
+          </h5>
+        </section>
+      </MainLayout>
     </>
-  )
+  );
 }
