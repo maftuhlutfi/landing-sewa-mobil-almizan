@@ -32,7 +32,7 @@ const services = [
 
 const ServiceItems = (props: Props) => {
   return (
-    <div className="grid max-w-[940px] grid-cols-3 gap-8">
+    <div className="grid w-[90%] max-w-[940px] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {services.map(({ icon, title }) => (
         <div className="flex items-center p-4 bg-white " key={icon}>
           <Image

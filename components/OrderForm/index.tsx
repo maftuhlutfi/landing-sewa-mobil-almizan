@@ -5,7 +5,7 @@ type Props = {};
 
 const OrderForm = (props: Props) => {
   return (
-    <form className="p-8 bg-white w-[480px] text-xs custom-shadow grid gap-5">
+    <form className="p-8 bg-white w-[90%] lg:w-[480px] text-xs custom-shadow grid gap-5">
       <div className="flex flex-col w-full">
         <label className="mb-2 font-semibold">Nama</label>
         <input className="px-4 py-3 border border-blue-300" />

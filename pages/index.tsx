@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <MainLayout>
         <section
-          className="bg-center bg-no-repeat bg-cover px-20 pt-[200px] pb-[160px] text-center flex flex-col items-center"
+          className="bg-center bg-no-repeat bg-cover px-4 md:px-10 lg:px-20 pt-[200px] pb-32 lg:pb-[160px] text-center flex flex-col items-center"
           style={{ backgroundImage: `url(/bg-pattern.svg)` }}
         >
           <h1 className="font-bold text-[40px] leading-[56px] max-w-[1000px]">
@@ -34,16 +34,27 @@ export default function Home() {
           </p>
           <Button className="px-8 mt-2 mb-12">Yuk Pesan!</Button>
         </section>
-        <Image
-          src="/hero-image.webp"
-          width={1280}
-          height={340}
-          className="absolute transform -translate-x-1/2 -mt-36 inset-x-1/2"
-          alt="hero-image"
-        />
-        <section className="flex justify-center px-20 pb-20 bg-linear-blue-dark pt-60">
-          <div className="flex items-center">
-            <div className="mr-20 max-w-[480px]">
+        <div className="hidden lg:block">
+          <Image
+            src="/hero-image.webp"
+            width={1280}
+            height={340}
+            className="absolute transform -translate-x-1/2 -mt-36 inset-x-1/2"
+            alt="hero-image"
+          />
+        </div>
+        <div className="absolute w-[720px] -translate-x-1/2 inset-x-1/2 md:static md:block lg:hidden">
+          <Image
+            src="/hero-image-small.webp"
+            width={1024}
+            height={228}
+            className="absolute -mt-32 transform -translate-x-1/2 inset-x-1/2"
+            alt="hero-image"
+          />
+        </div>
+        <section className="flex justify-center px-4 pt-40 pb-20 lg:px-20 md:px-10 bg-linear-blue-dark lg:pt-60">
+          <div className="flex flex-col items-center lg:flex-row">
+            <div className="mb-20 lg:mb-0 lg:mr-20 w-[90%] lg:max-w-[480px]">
               <h1 className="mb-5 text-4xl font-bold leading-[50px] text-white">
                 Kunjungi Tiap Sudut Magelang dan Jogja dengan Menyenangkan!
               </h1>
@@ -62,8 +73,8 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className="flex flex-col items-center px-20 py-20 bg-blue-600">
-          <h1 className="text-4xl font-bold leading-[50px] text-white max-w-xl mb-12 text-center">
+        <section className="flex flex-col items-center px-4 py-20 bg-blue-600 md:px-10 lg:px-20">
+          <h1 className="text-4xl font-bold leading-[50px] text-white w-[90%] max-w-xl mb-12 text-center">
             Kami Siap Melayani untuk Perjalanan yang Terbaik!
           </h1>
           <ServiceItems />
@@ -71,7 +82,7 @@ export default function Home() {
             Pesan Sekarang dan Nikmati Perjalanan Nyaman!
           </Button>
         </section>
-        <section className="flex flex-col items-center px-20 py-20 bg-[#F3F7F9]">
+        <section className="flex md:px-10 px-4 flex-col items-center lg:px-20 py-20 bg-[#F3F7F9]">
           <h1 className="text-4xl font-bold leading-[50px] mb-2 text-center">
             Armada Kami
           </h1>
@@ -81,9 +92,9 @@ export default function Home() {
           </p>
           <Armada />
         </section>
-        <section className="flex flex-col items-center px-20 py-20">
-          <div className="flex items-center">
-            <div className="max-w-[520px] mr-24">
+        <section className="flex flex-col items-center px-4 py-20 md:px-10 lg:px-20">
+          <div className="flex flex-col items-center lg:flex-row">
+            <div className="w-[90%] md:max-w-[800px] lg:max-w-[520px] mb-24 lg:mr-24">
               <h1 className="text-4xl font-bold leading-[50px] mb-9">
                 Yuk, pesan mobil dengan beberapa langkah mudah!
               </h1>
@@ -99,12 +110,12 @@ export default function Home() {
             <OrderForm />
           </div>
         </section>
-        <section className="flex flex-col items-center px-20 py-20 bg-blue-600">
+        <section className="flex flex-col items-center px-4 py-20 bg-blue-600 md:px-10 lg:px-20">
           <h1 className="text-4xl font-bold leading-[50px] text-white max-w-[960px] mb-8 text-center">
             “Kami hadir untuk memberikan solusi terbaik dalam perjalananmu,
             karena kepuasan pelanggan adalah prioritas utama kami.”
           </h1>
-          <h5 className="text-xl font-medium text-gray-300">
+          <h5 className="text-xl font-medium text-center text-gray-300">
             Tim Sewa Mobil Magelang Jogja Al Mizan
           </h5>
         </section>

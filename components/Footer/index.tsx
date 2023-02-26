@@ -18,7 +18,7 @@ const links: NavLink[] = [
 
 const Footer = (props: Props) => {
   return (
-    <footer className="flex items-start justify-between px-20 py-10 bg-linear-blue-dark">
+    <footer className="flex flex-col items-center gap-10 px-4 py-10 lg:gap-0 lg:items-start lg:justify-between md:px-10 lg:px-20 lg:flex-row bg-linear-blue-dark">
       <Image
         src="/logo-al-mizan-white.svg"
         width={230}
@@ -26,7 +26,9 @@ const Footer = (props: Props) => {
         alt="logo-al-mizan-white"
       />
       <div>
-        <h2 className="mb-5 text-2xl font-bold text-white">Menu</h2>
+        <h2 className="mb-5 text-2xl font-bold text-center text-white lg:text-left">
+          Menu
+        </h2>
         <div className="grid grid-flow-col grid-rows-3 gap-x-16 gap-y-4">
           {links.map((link) => (
             <a
@@ -40,7 +42,9 @@ const Footer = (props: Props) => {
         </div>
       </div>
       <div>
-        <h2 className="mb-5 text-2xl font-bold text-white">Lokasi Kami</h2>
+        <h2 className="mb-5 text-2xl font-bold text-center text-white lg:text-left">
+          Lokasi Kami
+        </h2>
         <div className="w-[320px] h-[140px] bg-blue-100"></div>
       </div>
     </footer>
