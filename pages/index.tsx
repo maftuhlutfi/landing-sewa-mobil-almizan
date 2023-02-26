@@ -93,7 +93,7 @@ export default function Home() {
             className="object-cover "
           />
         </div>
-        <section className="flex justify-center px-4 pt-40 pb-20 lg:px-20 md:px-10 bg-linear-blue-dark lg:pt-60">
+        <section className="flex justify-center px-4 pt-48 pb-20 -mt-20 sm:-mt-28 lg:mt-0 lg:px-20 md:px-10 bg-linear-blue-dark lg:pt-60">
           <div className="flex flex-col items-center lg:flex-row">
             <div className="mb-20 lg:mb-0 lg:mr-20 w-[90%] lg:max-w-[480px]">
               <h1 className="mb-5 text-4xl font-bold leading-[50px] text-white">
