@@ -9,7 +9,7 @@ type NavLink = {
 };
 const links: NavLink[] = [
   { name: "Home", href: "/" },
-  { name: "Armada", href: "#Armada" },
+  { name: "Armada", href: "#armada" },
   { name: "Cara Pesan", href: "#pesan" },
   { name: "Tentang Kami", href: "#tentang-kami" },
   { name: "Kontak", href: "#pesan" },
