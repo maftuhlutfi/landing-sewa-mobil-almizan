@@ -124,7 +124,10 @@ export default function Home({ dataMobil }: { dataMobil: armadaType[] }) {
             Pesan Sekarang dan Nikmati Perjalanan Nyaman!
           </Button>
         </section>
-        <section className="flex md:px-10 px-4 flex-col items-center lg:px-20 py-20 bg-[#F3F7F9]">
+        <section
+          id="armada"
+          className="flex md:px-10 px-4 flex-col items-center lg:px-20 py-20 bg-[#F3F7F9]"
+        >
           <h1 className="text-4xl font-bold leading-[50px] mb-2 text-center">
             Armada Kami
           </h1>
@@ -134,7 +137,10 @@ export default function Home({ dataMobil }: { dataMobil: armadaType[] }) {
           </p>
           <Armada armadaList={dataMobil} />
         </section>
-        <section className="flex flex-col items-center px-4 py-20 md:px-10 lg:px-20">
+        <section
+          id="pesan"
+          className="flex flex-col items-center px-4 py-20 md:px-10 lg:px-20"
+        >
           <div className="flex flex-col items-center lg:flex-row">
             <div className="w-[90%] md:max-w-[800px] lg:max-w-[520px] mb-24 lg:mr-24">
               <h1 className="text-4xl font-bold leading-[50px] mb-9">
@@ -152,7 +158,10 @@ export default function Home({ dataMobil }: { dataMobil: armadaType[] }) {
             <OrderForm />
           </div>
         </section>
-        <section className="flex flex-col items-center px-4 py-20 bg-blue-600 md:px-10 lg:px-20">
+        <section
+          id="tentang-kami"
+          className="flex flex-col items-center px-4 py-20 bg-blue-600 md:px-10 lg:px-20"
+        >
           <h1 className="text-4xl font-bold leading-[50px] text-white max-w-[960px] mb-8 text-center">
             “Kami hadir untuk memberikan solusi terbaik dalam perjalananmu,
             karena kepuasan pelanggan adalah prioritas utama kami.”

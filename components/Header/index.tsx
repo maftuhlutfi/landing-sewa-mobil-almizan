@@ -12,7 +12,7 @@ type HeaderProps = {};
 
 const links: NavLink[] = [
   { name: "Home", href: "/" },
-  { name: "Armada", href: "#Armada" },
+  { name: "Armada", href: "#armada" },
   { name: "Cara Pesan", href: "#pesan" },
   { name: "Tentang Kami", href: "#tentang-kami" },
 ];
@@ -45,12 +45,16 @@ const Header = ({}: HeaderProps) => {
               {link.name}
             </a>
           ))}
-          <Button variant="outlined" size="small">
-            Kontak
-          </Button>
-          <Button variant="primary" size="small">
-            Pesan Sekarang
-          </Button>
+          <a href="https://wa.me/+6281315716345" target="_blank">
+            <Button variant="outlined" size="small">
+              Kontak
+            </Button>
+          </a>
+          <a href="#pesan">
+            <Button variant="primary" size="small">
+              Pesan Sekarang
+            </Button>
+          </a>
         </nav>
         <div
           className="z-10 w-6 ml-8 bg-red-500 cursor-pointer lg:hidden"
