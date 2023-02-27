@@ -62,10 +62,10 @@ const ArmadaItem = ({
       </div>
       <Image
         src={image}
-        width={360}
-        height={250}
+        width={360 * 1.2}
+        height={250 * 1.2}
         alt={`image-${name}`}
-        className="object-contain object-center"
+        className="relative object-contain object-center mx-auto"
       />
     </div>
   );
