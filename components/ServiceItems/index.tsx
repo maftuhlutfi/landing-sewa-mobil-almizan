@@ -32,9 +32,19 @@ const services = [
 
 const ServiceItems = (props: Props) => {
   return (
-    <div className="grid w-[90%] max-w-[940px] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {services.map(({ icon, title }) => (
-        <div className="flex items-center p-4 bg-white " key={icon}>
+    <div
+      className="grid w-[90%] max-w-[940px] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+    >
+      {services.map(({ icon, title }, index) => (
+        <div
+          className="flex items-center p-4 bg-white "
+          key={icon}
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-delay={index * 100}
+        >
           <Image
             src={`/service-icons/${icon}`}
             alt={icon.replace(".svg", "")}

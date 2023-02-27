@@ -10,14 +10,19 @@ const ArmadaItem = ({
   priceHalf,
   image,
   includeBbm,
-}: armadaType) => {
+  index,
+}: armadaType & { index: number }) => {
   const handleClick = () => {
     document.getElementById("pesan")?.scrollIntoView();
     (document.querySelector("select#mobil") as HTMLInputElement).value = name;
   };
 
   return (
-    <div className="flex flex-col p-5 bg-white ">
+    <div
+      className="flex flex-col p-5 bg-white "
+      data-aos="fade-up"
+      data-aos-duration="500"
+    >
       <h4 className="mb-2 text-2xl font-semibold">{name}</h4>
       <p className="text-sm font-medium text-gray-700">
         Kapasitas {capacity} penumpang

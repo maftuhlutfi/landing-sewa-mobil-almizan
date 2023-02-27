@@ -69,18 +69,34 @@ export default function Home({ dataMobil }: { dataMobil: armadaType[] }) {
           className="bg-center bg-no-repeat bg-cover px-4 md:px-10 lg:px-20 pt-[200px] pb-32 lg:pb-[160px] text-center flex flex-col items-center"
           style={{ backgroundImage: `url(/bg-pattern.svg)` }}
         >
-          <h1 className="font-bold text-4xl md:text-[40px] leading-[56px] max-w-[1000px]">
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="500"
+            className="font-bold text-4xl md:text-[40px] leading-[56px] max-w-[1000px]"
+          >
             Jadikan Perjalananmu Lebih Nyaman dengan{" "}
             <span className="font-extrabold text-blue-600">#1</span> Sewa Mobil
             Magelang Jogja Terpercaya
           </h1>
-          <p className="max-w-3xl my-5 leading-6 text-gray-700">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="200"
+            className="max-w-3xl my-5 leading-6 text-gray-700"
+          >
             Rasakan kenyamanan dan keamanan dalam perjalananmu dengan menyewa
             mobil terpercaya di Magelang dan Jogja. Tersedia berbagai jenis
             mobil dengan harga terjangkau. Pesan sekarang dan nikmati pengalaman
             berkendara yang tak terlupakan!
           </p>
-          <Button className="px-8 mt-2 mb-12">Yuk Pesan!</Button>
+          <Button
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="800"
+            className="px-8 mt-2 mb-12"
+          >
+            Yuk Pesan!
+          </Button>
         </section>
         <div className="hidden lg:block">
           <Image
@@ -101,7 +117,11 @@ export default function Home({ dataMobil }: { dataMobil: armadaType[] }) {
         </div>
         <section className="flex justify-center px-4 pt-48 pb-20 -mt-20 sm:-mt-28 lg:mt-0 lg:px-20 md:px-10 bg-linear-blue-dark lg:pt-60">
           <div className="flex flex-col items-center lg:flex-row">
-            <div className="mb-20 lg:mb-0 lg:mr-20 w-[90%] lg:max-w-[480px]">
+            <div
+              className="mb-20 lg:mb-0 lg:mr-20 w-[90%] lg:max-w-[480px]"
+              data-aos="fade-right"
+              data-aos-duration="500"
+            >
               <h1 className="mb-5 text-4xl font-bold leading-[50px] text-white">
                 Kunjungi Tiap Sudut Magelang dan Jogja dengan Menyenangkan!
               </h1>
@@ -117,15 +137,27 @@ export default function Home({ dataMobil }: { dataMobil: armadaType[] }) {
               width={538}
               height={449}
               alt="yogya-mgl-photos"
+              data-aos="fade-left"
+              data-aos-duration="500"
             />
           </div>
         </section>
         <section className="flex flex-col items-center px-4 py-20 bg-blue-600 md:px-10 lg:px-20">
-          <h1 className="text-4xl font-bold leading-[50px] text-white w-[90%] max-w-xl mb-12 text-center">
+          <h1
+            className="text-4xl font-bold leading-[50px] text-white w-[90%] max-w-xl mb-12 text-center"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
             Kami Siap Melayani untuk Perjalanan yang Terbaik!
           </h1>
           <ServiceItems />
-          <Button className="mt-12" size="xl" variant="secondary">
+          <Button
+            className="mt-12"
+            size="xl"
+            variant="secondary"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
             Pesan Sekarang dan Nikmati Perjalanan Nyaman!
           </Button>
         </section>
@@ -133,10 +165,19 @@ export default function Home({ dataMobil }: { dataMobil: armadaType[] }) {
           id="armada"
           className="flex md:px-10 px-4 flex-col items-center lg:px-20 py-20 bg-[#F3F7F9]"
         >
-          <h1 className="text-4xl font-bold leading-[50px] mb-2 text-center">
+          <h1
+            className="text-4xl font-bold leading-[50px] mb-2 text-center"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
             Armada Kami
           </h1>
-          <p className="mb-10 text-sm leading-6 text-gray-700 max-w-[620px] text-center">
+          <p
+            className="mb-10 text-sm leading-6 text-gray-700 max-w-[620px] text-center"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="200"
+          >
             Kami menyediakan armada mobil yang terawat dan beragam jenis untuk
             mengantar perjalananmu dengan aman dan nyaman di Magelang dan Jogja.
           </p>
@@ -147,7 +188,11 @@ export default function Home({ dataMobil }: { dataMobil: armadaType[] }) {
           className="flex flex-col items-center px-4 py-20 md:px-10 lg:px-20"
         >
           <div className="flex flex-col items-center lg:flex-row">
-            <div className="w-[90%] md:max-w-[800px] lg:max-w-[520px] mb-24 lg:mr-24">
+            <div
+              className="w-[90%] md:max-w-[800px] lg:max-w-[520px] mb-24 lg:mr-24"
+              data-aos="fade-right"
+              data-aos-duration="500"
+            >
               <h1 className="text-4xl font-bold leading-[50px] mb-9">
                 Yuk, pesan mobil dengan beberapa langkah mudah!
               </h1>
@@ -171,11 +216,19 @@ export default function Home({ dataMobil }: { dataMobil: armadaType[] }) {
           id="tentang-kami"
           className="flex flex-col items-center px-4 py-20 bg-blue-600 md:px-10 lg:px-20"
         >
-          <h1 className="text-4xl font-bold leading-[50px] text-white max-w-[960px] mb-8 text-center">
+          <h1
+            className="text-4xl font-bold leading-[50px] text-white max-w-[960px] mb-8 text-center"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
             “Kami hadir untuk memberikan solusi terbaik dalam perjalananmu,
             karena kepuasan pelanggan adalah prioritas utama kami.”
           </h1>
-          <h5 className="text-xl font-medium text-center text-gray-300">
+          <h5
+            className="text-xl font-medium text-center text-gray-300"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
             Tim Sewa Mobil Magelang Jogja Al Mizan
           </h5>
         </section>

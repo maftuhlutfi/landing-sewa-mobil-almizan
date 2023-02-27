@@ -10,7 +10,7 @@ const Armada = ({ armadaList }: Props) => {
   return (
     <div className="grid w-[90%] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
       {armadaList.map((armada, index) => (
-        <ArmadaItem key={index} {...armada} />
+        <ArmadaItem key={index} index={index} {...armada} />
       ))}
     </div>
   );

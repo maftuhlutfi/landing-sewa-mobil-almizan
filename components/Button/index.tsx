@@ -1,3 +1,4 @@
+import { AosEventType } from "aos";
 import React from "react";
 
 type Props = {
@@ -8,6 +9,7 @@ type Props = {
   children?: React.ReactNode;
   variant?: "primary" | "secondary" | "outlined";
   size?: "small" | "medium" | "xl";
+  [key: string]: any;
 };
 
 const Button = ({
@@ -18,6 +20,7 @@ const Button = ({
   children,
   variant = "primary",
   size = "medium",
+  ...restProps
 }: Props) => {
   const baseStyle =
     "font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2";
@@ -62,6 +65,7 @@ const Button = ({
       onClick={onClick}
       type={type}
       disabled={disabled}
+      {...restProps}
     >
       {children}
     </button>

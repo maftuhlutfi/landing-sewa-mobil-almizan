@@ -42,6 +42,8 @@ const OrderForm = ({ listMobil }: Props) => {
     <form
       onSubmit={handleSubmit}
       className="p-8 bg-white w-[90%] lg:w-[480px] text-xs custom-shadow grid gap-5"
+      data-aos="fade-up"
+      data-aos-duration="1000"
     >
       <div className="flex flex-col w-full">
         <label htmlFor="nama" className="mb-2 font-semibold">
