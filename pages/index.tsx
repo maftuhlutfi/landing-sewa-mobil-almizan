@@ -224,13 +224,13 @@ export default function Home({ dataMobil }: { dataMobil: armadaType[] }) {
             “Kami hadir untuk memberikan solusi terbaik dalam perjalananmu,
             karena kepuasan pelanggan adalah prioritas utama kami.”
           </h1>
-          <h5
+          <p
             className="text-xl font-medium text-center text-gray-300"
             data-aos="fade-up"
             data-aos-duration="500"
           >
             Tim Sewa Mobil Magelang Jogja Al Mizan
-          </h5>
+          </p>
         </section>
         <FloatingComp />
       </MainLayout>

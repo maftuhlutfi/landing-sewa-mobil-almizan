@@ -10,7 +10,7 @@ const FloatingComp = (props: Props) => {
   return (
     <div className="fixed flex items-center bottom-4 right-4 md:bottom-8 md:right-8 lg:bottom-10 lg:right-10">
       <div
-        className="flex items-center justify-center ml-8 text-white bg-green-600 cursor-pointer w-14 h-14 md:px-4 md:py-2 md:w-auto md:h-auto"
+        className="flex items-center justify-center ml-8 text-white bg-green-700 cursor-pointer w-14 h-14 md:px-4 md:py-2 md:w-auto md:h-auto"
         onClick={() => window.open("https://wa.me/+6281315716345")}
       >
         <Image
