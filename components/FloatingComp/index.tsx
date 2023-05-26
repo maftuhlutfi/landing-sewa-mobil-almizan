@@ -9,19 +9,23 @@ const FloatingComp = (props: Props) => {
 
   return (
     <div className="fixed flex items-center bottom-4 right-4 md:bottom-8 md:right-8 lg:bottom-10 lg:right-10">
-      <div
+      <a
         id="click-wa"
         className="flex items-center justify-center ml-8 text-white bg-green-700 cursor-pointer w-14 h-14 md:px-4 md:py-2 md:w-auto md:h-auto"
-        onClick={() => window.open("https://wa.me/+6281315716345")}
+        href="https://wa.me/+6281315716345"
+        target="_blank"
       >
         <Image
+          id="click-wa"
           src="/whatsapp-icon.svg"
           width={40}
           height={40}
           alt="whatsapp-icon"
         />
-        <p className="hidden ml-3 font-bold md:block">Chat Sekarang!</p>
-      </div>
+        <p className="hidden ml-3 font-bold md:block" id="click-wa">
+          Chat Sekarang!
+        </p>
+      </a>
       <div
         className={`flex items-center justify-center ml-4 lg:ml-8 bg-blue-200 w-14 h-14 cursor-pointer ${
           scrollPos < 800 ? "hidden" : "block"
