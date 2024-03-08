@@ -239,16 +239,132 @@ export default function Home({ dataMobil }: { dataMobil: armadaType[] }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch(
-    "https://api.sheety.co/f27cc94bba1d6eea26802f8d6c63eaeb/alMizan/dataMobil"
-  );
-  const data = await res.json();
-  const { dataMobil }: { dataMobil: armadaType[] } = data;
-  console.log(dataMobil);
+  const data = [
+    {
+      name: "Toyota Avanza",
+      capacity: 5,
+      priceHalf: 400000,
+      priceDay: 500000,
+      image: "https://i.ibb.co/9Y5byCx/avanza.webp",
+      includeBbm: 0,
+    },
+    {
+      name: "Toyota Calya",
+      capacity: 5,
+      priceHalf: 350000,
+      priceDay: 450000,
+      image: "https://i.ibb.co/T8qK8sC/calya.webp",
+      includeBbm: 0,
+    },
+    {
+      name: "Daihatsu Xenia",
+      capacity: 5,
+      priceHalf: 400000,
+      priceDay: 500000,
+      image: "https://i.ibb.co/CzQkbdG/xenia.webp",
+      includeBbm: 0,
+    },
+    {
+      name: "Toyota Innova Grand",
+      capacity: 5,
+      priceHalf: 550000,
+      priceDay: 650000,
+      image: "https://i.ibb.co/LRSF52Y/innova.webp",
+      includeBbm: 0,
+    },
+    {
+      name: "Toyota Innova Rebord",
+      capacity: 5,
+      priceHalf: 600000,
+      priceDay: 700000,
+      image: "https://i.ibb.co/HP2Z9ZP/innova-reborn.webp",
+      includeBbm: 0,
+    },
+    {
+      name: "Isuzu Elf Short",
+      capacity: 10,
+      priceHalf: 650000,
+      priceDay: 750000,
+      image: "https://i.ibb.co/1YcPyVc/elf.webp",
+      includeBbm: 0,
+    },
+    {
+      name: "Isuzu Elf Long",
+      capacity: 19,
+      priceHalf: 1000000,
+      priceDay: 1100000,
+      image: "https://i.ibb.co/WW2f4XN/elf-long.webp",
+      includeBbm: 0,
+    },
+    {
+      name: "Toyota Hiace Commuter",
+      capacity: 15,
+      priceHalf: 1000000,
+      priceDay: 1100000,
+      image: "https://i.ibb.co/3RfywYs/hiace.webp",
+      includeBbm: 0,
+    },
+    {
+      name: "Toyota Hiace Premio",
+      capacity: 13,
+      priceHalf: 1150000,
+      priceDay: 1250000,
+      image: "https://i.ibb.co/HxbbPWN/hiace-premio.webp",
+      includeBbm: 0,
+    },
+    {
+      name: "Mitsubishi Pajero",
+      capacity: 5,
+      priceHalf: 1300000,
+      priceDay: 1400000,
+      image: "https://i.ibb.co/B6hHk9j/pajero.webp",
+      includeBbm: 0,
+    },
+    {
+      name: "Toyota Fortuner",
+      capacity: 5,
+      priceHalf: 1300000,
+      priceDay: 1400000,
+      image: "https://i.ibb.co/6mp7zR2/fortuner.webp",
+      includeBbm: 0,
+    },
+    {
+      name: "Toyota Alphard Transformer",
+      capacity: 5,
+      priceHalf: 2750000,
+      priceDay: 3000000,
+      image: "https://i.ibb.co/ts1p8JJ/alphard.webp",
+      includeBbm: 0,
+    },
+    {
+      name: "Medium Bus Pariwisata",
+      capacity: 30,
+      priceHalf: 1650000,
+      priceDay: 1750000,
+      image: "https://i.ibb.co/zfmWY0f/medium-bus.webp",
+      includeBbm: 1,
+    },
+    {
+      name: "Big Bus Pariwisata",
+      capacity: 50,
+      priceHalf: 2750000,
+      priceDay: 3000000,
+      image: "https://i.ibb.co/n6xV6P4/big-bus1.webp",
+      includeBbm: 1,
+    },
+    {
+      name: "Grand Max Pick Up",
+      capacity: 1,
+      priceHalf: 400000,
+      priceDay: 500000,
+      image: "https://i.ibb.co/5vcRCkL/grandmax.webp",
+      includeBbm: 0,
+    },
+  ];
 
   return {
     props: {
-      dataMobil: dataMobil,
+      dataMobil: data,
     },
   };
 }
