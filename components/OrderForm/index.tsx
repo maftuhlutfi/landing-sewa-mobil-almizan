@@ -32,7 +32,7 @@ const OrderForm = ({ listMobil }: Props) => {
 
     const message = `Halo admin, saya ingin memesan mobil dengan detail sebagai berikut:\n\nNama: ${nama}\nMobil: ${mobil}\nAlamat Penjemputan: ${alamatJemput}\nTanggal Jemput: ${formatedTanggalJemput}\nWaktu Jemput: ${waktuJemput}\nLokasi Drop Off: ${alamatDropOff}\nTanggal Drop Off: ${formatedTanggalDropOff}\nWaktu Drop Off: ${waktuDropOff}`;
 
-    const url = `https://api.whatsapp.com/send?phone=6281315716345&text=${encodeURIComponent(
+    const url = `https://api.whatsapp.com/send?phone=6282328767489&text=${encodeURIComponent(
       message
     )}`;
     window.open(url, "_blank");
