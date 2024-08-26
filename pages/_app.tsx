@@ -15,15 +15,8 @@ export default function App({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <>
-      <style jsx global>
-        {`
-          :root {
-            --montserrat-font: ${montserrat.style.fontFamily};
-          }
-        `}
-      </style>
+    <main className={montserrat.className}>
       <Component {...pageProps} />
-    </>
+    </main>
   );
 }
