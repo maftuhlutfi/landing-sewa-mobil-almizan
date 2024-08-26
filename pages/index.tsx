@@ -1,6 +1,7 @@
 import Armada from "@/components/Armada";
 import Button from "@/components/Button";
 import FloatingComp from "@/components/FloatingComp";
+import GallerySlider from "@/components/GalleySlider";
 import OrderForm from "@/components/OrderForm";
 import OrderSteps from "@/components/OrderSteps";
 import ServiceItems from "@/components/ServiceItems";
@@ -89,14 +90,16 @@ export default function Home({ dataMobil }: { dataMobil: armadaType[] }) {
             mobil dengan harga terjangkau. Pesan sekarang dan nikmati pengalaman
             berkendara yang tak terlupakan!
           </p>
-          <Button
-            data-aos="fade-up"
-            data-aos-duration="500"
-            data-aos-delay="800"
-            className="px-8 mt-2 mb-12"
-          >
-            Yuk Pesan!
-          </Button>
+          <a href="#pesan">
+            <Button
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="800"
+              className="px-8 mt-2 mb-12"
+            >
+              Yuk Pesan!
+            </Button>
+          </a>
         </section>
         <div className="hidden lg:block">
           <Image
@@ -151,15 +154,17 @@ export default function Home({ dataMobil }: { dataMobil: armadaType[] }) {
             Kami Siap Melayani untuk Perjalanan yang Terbaik!
           </h1>
           <ServiceItems />
-          <Button
-            className="mt-12"
-            size="xl"
-            variant="secondary"
-            data-aos="fade-up"
-            data-aos-duration="500"
-          >
-            Pesan Sekarang dan Nikmati Perjalanan Nyaman!
-          </Button>
+          <a href="#pesan">
+            <Button
+              className="mt-12"
+              size="xl"
+              variant="secondary"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              Pesan Sekarang dan Nikmati Perjalanan Nyaman!
+            </Button>
+          </a>
         </section>
         <section
           id="armada"
@@ -214,23 +219,26 @@ export default function Home({ dataMobil }: { dataMobil: armadaType[] }) {
         </section>
         <section
           id="tentang-kami"
-          className="flex flex-col items-center px-4 py-20 bg-blue-600 md:px-10 lg:px-20"
+          className="px-4 py-20 bg-blue-600 md:px-10 lg:px-20"
         >
-          <h1
-            className="text-4xl font-bold leading-[50px] text-white max-w-[960px] mb-8 text-center"
-            data-aos="fade-up"
-            data-aos-duration="500"
-          >
-            “Kami hadir untuk memberikan solusi terbaik dalam perjalananmu,
-            karena kepuasan pelanggan adalah prioritas utama kami.”
-          </h1>
-          <p
-            className="text-xl font-medium text-center text-gray-300"
-            data-aos="fade-up"
-            data-aos-duration="500"
-          >
-            Tim Sewa Mobil Magelang Jogja Al Mizan
-          </p>
+          <div className="flex flex-col items-center">
+            <h1
+              className="text-4xl font-bold leading-[50px] text-white max-w-[960px] mb-8 text-center"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              “Kami hadir untuk memberikan solusi terbaik dalam perjalananmu,
+              karena kepuasan pelanggan adalah prioritas utama kami.”
+            </h1>
+            <p
+              className="text-xl font-medium text-center text-gray-300"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              Tim Sewa Mobil Magelang Jogja Al Mizan
+            </p>
+          </div>
+          <GallerySlider />
         </section>
         <FloatingComp />
       </MainLayout>
