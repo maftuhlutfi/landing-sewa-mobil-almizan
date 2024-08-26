@@ -35,7 +35,7 @@ const FloatingComp = (props: Props) => {
             <div className="bg-[#075e54] text-white text-center py-3 relative">
               Customer Service 24/7
               <div
-                className="absolute text-xs right-4 top-4"
+                className="absolute text-xs text-white right-4 top-4"
                 onClick={() => setOpenCS(false)}
               >
                 ✖
