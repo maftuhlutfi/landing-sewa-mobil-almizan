@@ -259,7 +259,7 @@ export async function getStaticProps() {
     {
       name: "Toyota Calya",
       capacity: 5,
-      priceHalf: 350000,
+      priceHalf: 450000,
       priceDay: 450000,
       image: "https://i.ibb.co/T8qK8sC/calya.webp",
       includeBbm: 0,
@@ -267,7 +267,7 @@ export async function getStaticProps() {
     {
       name: "Daihatsu Xenia",
       capacity: 5,
-      priceHalf: 400000,
+      priceHalf: 500000,
       priceDay: 500000,
       image: "https://i.ibb.co/CzQkbdG/xenia.webp",
       includeBbm: 0,
@@ -275,7 +275,7 @@ export async function getStaticProps() {
     {
       name: "Toyota Innova Grand",
       capacity: 5,
-      priceHalf: 550000,
+      priceHalf: 650000,
       priceDay: 650000,
       image: "https://i.ibb.co/LRSF52Y/innova.webp",
       includeBbm: 0,
@@ -283,7 +283,7 @@ export async function getStaticProps() {
     {
       name: "Toyota Innova Rebord",
       capacity: 5,
-      priceHalf: 600000,
+      priceHalf: 700000,
       priceDay: 700000,
       image: "https://i.ibb.co/HP2Z9ZP/innova-reborn.webp",
       includeBbm: 0,
@@ -291,7 +291,7 @@ export async function getStaticProps() {
     {
       name: "Isuzu Elf Short",
       capacity: 10,
-      priceHalf: 650000,
+      priceHalf: 750000,
       priceDay: 750000,
       image: "https://i.ibb.co/1YcPyVc/elf.webp",
       includeBbm: 0,
@@ -299,7 +299,7 @@ export async function getStaticProps() {
     {
       name: "Isuzu Elf Long",
       capacity: 19,
-      priceHalf: 1000000,
+      priceHalf: 1100000,
       priceDay: 1100000,
       image: "https://i.ibb.co/WW2f4XN/elf-long.webp",
       includeBbm: 0,
@@ -315,7 +315,7 @@ export async function getStaticProps() {
     {
       name: "Toyota Hiace Premio",
       capacity: 13,
-      priceHalf: 1150000,
+      priceHalf: 1300000,
       priceDay: 1250000,
       image: "https://i.ibb.co/HxbbPWN/hiace-premio.webp",
       includeBbm: 0,
@@ -323,7 +323,7 @@ export async function getStaticProps() {
     {
       name: "Mitsubishi Pajero",
       capacity: 5,
-      priceHalf: 1300000,
+      priceHalf: 1500000,
       priceDay: 1400000,
       image: "https://i.ibb.co/B6hHk9j/pajero.webp",
       includeBbm: 0,
@@ -331,7 +331,7 @@ export async function getStaticProps() {
     {
       name: "Toyota Fortuner",
       capacity: 5,
-      priceHalf: 1300000,
+      priceHalf: 1400000,
       priceDay: 1400000,
       image: "https://i.ibb.co/6mp7zR2/fortuner.webp",
       includeBbm: 0,
@@ -339,7 +339,7 @@ export async function getStaticProps() {
     {
       name: "Toyota Alphard Transformer",
       capacity: 5,
-      priceHalf: 2750000,
+      priceHalf: 2850000,
       priceDay: 3000000,
       image: "https://i.ibb.co/ts1p8JJ/alphard.webp",
       includeBbm: 0,
@@ -347,7 +347,7 @@ export async function getStaticProps() {
     {
       name: "Medium Bus Pariwisata",
       capacity: 30,
-      priceHalf: 1650000,
+      priceHalf: 1750000,
       priceDay: 1750000,
       image: "https://i.ibb.co/zfmWY0f/medium-bus.webp",
       includeBbm: 1,
@@ -355,7 +355,7 @@ export async function getStaticProps() {
     {
       name: "Big Bus Pariwisata",
       capacity: 50,
-      priceHalf: 2750000,
+      priceHalf: 2850000,
       priceDay: 3000000,
       image: "https://i.ibb.co/n6xV6P4/big-bus1.webp",
       includeBbm: 1,
@@ -363,7 +363,7 @@ export async function getStaticProps() {
     {
       name: "Grand Max Pick Up",
       capacity: 1,
-      priceHalf: 400000,
+      priceHalf: 500000,
       priceDay: 500000,
       image: "https://i.ibb.co/5vcRCkL/grandmax.webp",
       includeBbm: 0,

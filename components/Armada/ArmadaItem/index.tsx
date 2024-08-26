@@ -35,6 +35,9 @@ const ArmadaItem = ({
           <p className="text-blue-600 mb-1.5 font-bold">
             {formatRupiah(priceHalf)}
           </p>
+          <p className="text-gray-600 mb-1.5 text-xs italic mt-2">
+            <span className="text-red-600">*</span> Include BBM, Mobil, Sopir
+          </p>
           {/* <p className="text-blue-600 mb-1.5 font-semibold">
             Rp. {priceDay} (24 jam)
           </p> */}
