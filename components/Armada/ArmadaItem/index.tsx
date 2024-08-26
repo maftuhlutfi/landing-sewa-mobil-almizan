@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import { armadaType } from "@/ts/types/armadaType";
+import formatRupiah from "@/utils/formatRupiah";
 import Image from "next/image";
 import React from "react";
 
@@ -31,13 +32,13 @@ const ArmadaItem = ({
       <div className="flex items-start justify-between mb-10">
         <div className="text-sm">
           <p className="text-gray-700 mb-1.5 font-semibold">Tarif Mulai</p>
-          <p className="text-blue-600 mb-1.5 font-semibold">
-            Rp. {priceHalf} (12 jam)
+          <p className="text-blue-600 mb-1.5 font-bold">
+            {formatRupiah(priceHalf)}
           </p>
-          <p className="text-blue-600 mb-1.5 font-semibold">
+          {/* <p className="text-blue-600 mb-1.5 font-semibold">
             Rp. {priceDay} (24 jam)
-          </p>
-          <p className="text-gray-600 mb-1.5 text-xs italic mt-2">
+          </p> */}
+          {/* <p className="text-gray-600 mb-1.5 text-xs italic mt-2">
             {includeBbm ? (
               <>
                 <span className="text-red-600">*</span> Sudah termasuk BBM
@@ -48,7 +49,7 @@ const ArmadaItem = ({
                 100.000)
               </>
             )}
-          </p>
+          </p> */}
         </div>
         <Button
           size="small"
