@@ -15,20 +15,21 @@ const FloatingComp = (props: Props) => {
         id="click-wa"
         className="flex items-center justify-center ml-8 text-white bg-gradient-to-tr from-[#2db640] to-[#57ce62] cursor-pointer w-14 h-14 md:px-4 md:py-2 md:w-auto md:h-auto rounded-lg shadow-xl relative"
       >
-        <Image
-          id="click-wa"
-          src="/whatsapp-icon.svg"
-          width={40}
-          height={40}
-          alt="whatsapp-icon"
-        />
-        <p
-          className="hidden ml-3 font-bold md:block"
-          id="click-wa"
-          onClick={() => setOpenCS(true)}
+        <div
+          onClick={() => setOpenCS((prev) => !prev)}
+          className="flex items-center"
         >
-          Chat Sekarang!
-        </p>
+          <Image
+            id="click-wa"
+            src="/whatsapp-icon.svg"
+            width={40}
+            height={40}
+            alt="whatsapp-icon"
+          />
+          <p className="hidden ml-3 font-bold md:block" id="click-wa">
+            Chat Sekarang!
+          </p>
+        </div>
         {openCS && (
           <div className="absolute right-0 text-sm rounded-lg shadow-xl overflow-clip w-72 bottom-[72px]">
             <div className="bg-[#075e54] text-white text-center py-3 relative">
