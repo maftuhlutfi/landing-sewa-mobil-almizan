@@ -251,7 +251,7 @@ export async function getStaticProps() {
     {
       name: "Toyota Avanza",
       capacity: 5,
-      priceHalf: 400000,
+      priceHalf: 500000,
       priceDay: 500000,
       image: "https://i.ibb.co/9Y5byCx/avanza.webp",
       includeBbm: 0,
@@ -307,7 +307,7 @@ export async function getStaticProps() {
     {
       name: "Toyota Hiace Commuter",
       capacity: 15,
-      priceHalf: 1000000,
+      priceHalf: 1200000,
       priceDay: 1100000,
       image: "https://i.ibb.co/3RfywYs/hiace.webp",
       includeBbm: 0,
