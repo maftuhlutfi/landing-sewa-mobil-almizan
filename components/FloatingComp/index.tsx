@@ -48,7 +48,7 @@ const FloatingComp = (props: Props) => {
               </div>
             </div>
             <div className="px-4 py-2 bg-white">
-              <a
+              {/* <a
                 href="https://wa.me/6282328767489?text=Hallo...%20Al%20Mizan%20Sewa%20Mobil%20Magelang%20Jogja...%20Kami%20ingin%20bertanya%20tentang%20Sewa%20Mobil%2012%2F24%20Jam%20-%20https%3A%2F%2Fwww.sewamobilmagelangjogja.com%2F"
                 target="_blank"
                 className="bg-gradient-to-tr from-[#2db640] to-[#57ce62] cursor-pointer py-1 w-full flex items-center justify-center rounded-full text-xs mb-2"
@@ -77,6 +77,22 @@ const FloatingComp = (props: Props) => {
                   className="mr-1"
                 />
                 Hubungi Admin 2
+              </a> */}
+
+              <a
+                href="https://wa.me/6281315716345?text=Hallo...%20Al%20Mizan%20Sewa%20Mobil%20Magelang%20Jogja...%20Kami%20ingin%20bertanya%20tentang%20Sewa%20Mobil%2012%2F24%20Jam%20-%20https%3A%2F%2Fwww.sewamobilmagelangjogja.com%2F"
+                target="_blank"
+                className="bg-gradient-to-tr from-[#2db640] to-[#57ce62] cursor-pointer py-1 w-full flex items-center justify-center rounded-full text-xs"
+              >
+                <Image
+                  id="click-wa"
+                  src="/whatsapp-icon.svg"
+                  width={24}
+                  height={24}
+                  alt="whatsapp-icon"
+                  className="mr-1"
+                />
+                Hubungi Admin 1
               </a>
               <div className="flex items-center justify-center mt-2 text-[10px] text-black font-medium">
                 <div className="w-2 h-2 mr-1 bg-green-600 rounded-full" />
