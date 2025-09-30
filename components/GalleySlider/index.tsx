@@ -23,7 +23,7 @@ const GallerySlider = (props: Props) => {
   };
 
   return (
-    <div className="px-10 mt-8 slider-container">
+    <div className="px-10 mt-8 slider-container max-w-[1280px] mx-auto">
       <Slider {...settings}>
         {[...Array(6)].map((_, index) => (
           <div key={index} className="px-2">

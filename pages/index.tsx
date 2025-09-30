@@ -281,11 +281,11 @@ export async function getStaticProps() {
       includeBbm: 0,
     },
     {
-      name: "Toyota Innova Rebord",
+      name: "Toyota Innova Reborn",
       capacity: 5,
       priceHalf: 700000,
       priceDay: 700000,
-      image: "https://i.ibb.co/HP2Z9ZP/innova-reborn.webp",
+      image: "https://i.ibb.co/RG2pVRYY/innova-reborn-1.webp",
       includeBbm: 0,
     },
     {
@@ -301,7 +301,7 @@ export async function getStaticProps() {
       capacity: 19,
       priceHalf: 1100000,
       priceDay: 1100000,
-      image: "https://i.ibb.co/WW2f4XN/elf-long.webp",
+      image: "https://i.ibb.co/TBCSytWf/elf-long-1.webp",
       includeBbm: 0,
     },
     {
@@ -325,7 +325,7 @@ export async function getStaticProps() {
       capacity: 5,
       priceHalf: 1500000,
       priceDay: 1400000,
-      image: "https://i.ibb.co/B6hHk9j/pajero.webp",
+      image: "https://i.ibb.co/4nDFy8bg/pajero-1.webp",
       includeBbm: 0,
     },
     {
@@ -365,7 +365,7 @@ export async function getStaticProps() {
       capacity: 1,
       priceHalf: 500000,
       priceDay: 500000,
-      image: "https://i.ibb.co/5vcRCkL/grandmax.webp",
+      image: "https://i.ibb.co/Jjn8VJR0/grandmax-1.webp",
       includeBbm: 0,
     },
   ];

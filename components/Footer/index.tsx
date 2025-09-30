@@ -20,12 +20,25 @@ const Footer = (props: Props) => {
   return (
     <footer className="bg-linear-blue-dark">
       <div className="flex flex-col items-center gap-10 px-4 py-10 lg:gap-0 lg:items-start lg:justify-between md:px-10 lg:px-20 lg:flex-row max-w-[1440px] relative mx-auto">
-        <Image
-          src="/logo-al-mizan-white.svg"
-          width={230}
-          height={108}
-          alt="logo-al-mizan-white"
-        />
+        <div className="max-w-[320px]">
+          <Image
+            src="/logo-al-mizan-white.svg"
+            width={230 * 0.7}
+            height={108 * 0.7}
+            alt="logo-al-mizan-white"
+          />
+          <p className="mt-5 text-sm font-bold text-white">
+            PT ALMIZAN TOUR AND TREVEL
+          </p>
+          <p className="mt-2 text-sm text-white">
+            <b>Kantor Magelang</b> <br /> Nglengkong, Seworan, Grabag, Magelang
+            Regency, Central Java 56196
+          </p>
+          <p className="mt-2 text-sm text-white">
+            <b>Kantor Jogja</b> <br /> Pangakrejo, Umbulharjo, Kec. Cangkringan,
+            Kabupaten Sleman, Daerah Istimewa Yogyakarta 55583
+          </p>
+        </div>
         <div>
           <h2 className="mb-5 text-2xl font-bold text-center text-white lg:text-left">
             Menu
