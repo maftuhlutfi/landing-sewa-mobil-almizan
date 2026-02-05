@@ -14,6 +14,18 @@ export default function Document() {
         })(window,document,'script','dataLayer','GTM-TGZ2S4Q');
       `}
         </Script>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-11088506953"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-config" strategy="afterInteractive">
+          {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-11088506953');
+    `}
+        </Script>
       </Head>
       <body>
         <noscript
