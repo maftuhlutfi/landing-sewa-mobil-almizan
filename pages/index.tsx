@@ -39,7 +39,7 @@ export default function Home({ dataMobil }: { dataMobil: armadaType[] }) {
         />
         <meta
           property="og:image"
-          content="https://i.ibb.co/h7JnzYb/meta-image.jpg"
+          content="https://www.sewamobilmagelangjogja.com/meta-image.jpg"
         />
         <meta property="twitter:card" content="summary_large_image" />
         <meta
@@ -56,7 +56,7 @@ export default function Home({ dataMobil }: { dataMobil: armadaType[] }) {
         />
         <meta
           property="twitter:image"
-          content="https://i.ibb.co/h7JnzYb/meta-image.jpg"
+          content="https://www.sewamobilmagelangjogja.com/meta-image.jpg"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -253,7 +253,7 @@ export async function getStaticProps() {
       capacity: 5,
       priceHalf: 500000,
       priceDay: 500000,
-      image: "https://i.ibb.co/9Y5byCx/avanza.webp",
+      image: "/armada-images/avanza.webp",
       includeBbm: 0,
     },
     {
@@ -261,7 +261,7 @@ export async function getStaticProps() {
       capacity: 5,
       priceHalf: 450000,
       priceDay: 450000,
-      image: "https://i.ibb.co/T8qK8sC/calya.webp",
+      image: "/armada-images/calya.webp",
       includeBbm: 0,
     },
     {
@@ -269,7 +269,7 @@ export async function getStaticProps() {
       capacity: 5,
       priceHalf: 500000,
       priceDay: 500000,
-      image: "https://i.ibb.co/CzQkbdG/xenia.webp",
+      image: "/armada-images/xenia.webp",
       includeBbm: 0,
     },
     {
@@ -277,7 +277,7 @@ export async function getStaticProps() {
       capacity: 5,
       priceHalf: 650000,
       priceDay: 650000,
-      image: "https://i.ibb.co/LRSF52Y/innova.webp",
+      image: "/armada-images/innova.webp",
       includeBbm: 0,
     },
     {
@@ -285,7 +285,7 @@ export async function getStaticProps() {
       capacity: 5,
       priceHalf: 700000,
       priceDay: 700000,
-      image: "https://i.ibb.co/RG2pVRYY/innova-reborn-1.webp",
+      image: "/armada-images/innova-reborn-1.webp",
       includeBbm: 0,
     },
     {
@@ -293,7 +293,7 @@ export async function getStaticProps() {
       capacity: 10,
       priceHalf: 750000,
       priceDay: 750000,
-      image: "https://i.ibb.co/1YcPyVc/elf.webp",
+      image: "/armada-images/elf.webp",
       includeBbm: 0,
     },
     {
@@ -301,7 +301,7 @@ export async function getStaticProps() {
       capacity: 19,
       priceHalf: 1100000,
       priceDay: 1100000,
-      image: "https://i.ibb.co/TBCSytWf/elf-long-1.webp",
+      image: "/armada-images/elf-long-1.webp",
       includeBbm: 0,
     },
     {
@@ -309,7 +309,7 @@ export async function getStaticProps() {
       capacity: 15,
       priceHalf: 1200000,
       priceDay: 1100000,
-      image: "https://i.ibb.co/3RfywYs/hiace.webp",
+      image: "/armada-images/hiace.webp",
       includeBbm: 0,
     },
     {
@@ -317,7 +317,7 @@ export async function getStaticProps() {
       capacity: 13,
       priceHalf: 1300000,
       priceDay: 1250000,
-      image: "https://i.ibb.co/HxbbPWN/hiace-premio.webp",
+      image: "/armada-images/hiace-premio.webp",
       includeBbm: 0,
     },
     {
@@ -325,7 +325,7 @@ export async function getStaticProps() {
       capacity: 5,
       priceHalf: 1500000,
       priceDay: 1400000,
-      image: "https://i.ibb.co/4nDFy8bg/pajero-1.webp",
+      image: "/armada-images/pajero-1.webp",
       includeBbm: 0,
     },
     {
@@ -333,7 +333,7 @@ export async function getStaticProps() {
       capacity: 5,
       priceHalf: 1400000,
       priceDay: 1400000,
-      image: "https://i.ibb.co/6mp7zR2/fortuner.webp",
+      image: "/armada-images/fortuner.webp",
       includeBbm: 0,
     },
     {
@@ -341,7 +341,7 @@ export async function getStaticProps() {
       capacity: 5,
       priceHalf: 2850000,
       priceDay: 3000000,
-      image: "https://i.ibb.co/ts1p8JJ/alphard.webp",
+      image: "/armada-images/alphard.webp",
       includeBbm: 0,
     },
     {
@@ -349,7 +349,7 @@ export async function getStaticProps() {
       capacity: 30,
       priceHalf: 1750000,
       priceDay: 1750000,
-      image: "https://i.ibb.co/zfmWY0f/medium-bus.webp",
+      image: "/armada-images/medium-bus.webp",
       includeBbm: 1,
     },
     {
@@ -357,7 +357,7 @@ export async function getStaticProps() {
       capacity: 50,
       priceHalf: 2850000,
       priceDay: 3000000,
-      image: "https://i.ibb.co/n6xV6P4/big-bus1.webp",
+      image: "/armada-images/big-bus1.webp",
       includeBbm: 1,
     },
     {
@@ -365,7 +365,7 @@ export async function getStaticProps() {
       capacity: 1,
       priceHalf: 500000,
       priceDay: 500000,
-      image: "https://i.ibb.co/Jjn8VJR0/grandmax-1.webp",
+      image: "/armada-images/grandmax-1.webp",
       includeBbm: 0,
     },
   ];
